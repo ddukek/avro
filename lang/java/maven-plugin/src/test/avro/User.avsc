@@ -25,13 +25,24 @@
             "default": null
         },
         {
-            "name": "privacyImported", 
-            "type": ["null", "test.PrivacyImport"],
+            "name": "privacyImported",
+            "type": "test.PrivacyImport",
             "default": null
         },
         {
             "name": "privacyDirectImport", 
             "type": ["null", "test.PrivacyDirectImport"],
+            "default": null
+        },
+        {
+            "name": "privacyImportedArray",
+            "type": {
+                "type": "array",
+                "items": {
+                    "name": "privacyImport",
+                    "type": "test.PrivacyImport"
+                }
+            },
             "default": null
         }
     ]
